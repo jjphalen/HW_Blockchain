@@ -1,0 +1,5 @@
+#Initialize Node 2:
+Geth init hw_zbank_testnet.json --datadir node2_hw_zbank_testnet
+
+#Mining
+Geth --datadir node2_hw_zbank_testnet --port 30304 --rpc --bootnodes “enode://e8d7c9f72650900e530db60ec9c5c72da3c065efc93e907af3e9fea24fe20c8b0d0a5fd5b5ba6c0610fad3daf96b4ad5ee711353f577f91b1537f83ca286137c@127.0.0.1:30303” --ipcdisable

@@ -1,0 +1,103 @@
+phale@Neo-MSI MINGW64 /c/Program Files/Geth
+$ puppeth
++-----------------------------------------------------------+
+| Welcome to puppeth, your Ethereum private network manager |
+|                                                           |
+| This tool lets you create a new Ethereum network down to  |
+| the genesis block, bootnodes, miners and ethstats servers |
+| without the hassle that it would normally entail.         |
+|                                                           |
+| Puppeth uses SSH to dial in to remote servers, and builds |
+| its network components out of Docker containers using the |
+| docker-compose toolset.                                   |
++-----------------------------------------------------------+
+
+Please specify a network name to administer (no spaces, hyphens or capital letters please)
+> (base)
+phale@Neo-MSI MINGW64 /c/Program Files/Geth
+$ ls
+abigen.exe*    evm.exe*           fugazi-harmony.json  hw_zbank_testnet/  puppeth.exe*    web3/
+bootnode.exe*  fugazi.json        fugazi-parity.json   node1/             rlpdump.exe*    wnode.exe*
+clef.exe*      fugazi-aleth.json  geth.exe*            node2/             uninstall.exe*
+(base)
+phale@Neo-MSI MINGW64 /c/Program Files/Geth
+$ cd hw_zbank_testnet/
+(base)
+phale@Neo-MSI MINGW64 /c/Program Files/Geth/hw_zbank_testnet
+$ puppeth
++-----------------------------------------------------------+
+| Welcome to puppeth, your Ethereum private network manager |
+|                                                           |
+| This tool lets you create a new Ethereum network down to  |
+| the genesis block, bootnodes, miners and ethstats servers |
+| without the hassle that it would normally entail.         |
+|                                                           |
+| Puppeth uses SSH to dial in to remote servers, and builds |
+| its network components out of Docker containers using the |
+| docker-compose toolset.                                   |
++-----------------------------------------------------------+
+
+Please specify a network name to administer (no spaces, hyphens or capital letters please)
+> hw_zbank_testnet
+
+Sweet, you can set this via --network=hw_zbank_testnet next time!
+
+[32mINFO [0m[04-22|00:12:57.664] Administering Ethereum network           [32mname[0m=hw_zbank_testnet
+[33mWARN [0m[04-22|00:12:57.665] No previous configurations found         [33mpath[0m=C:\\Users\\phale\\.puppeth\\hw_zbank_testnet
+
+What would you like to do? (default = stats)
+ 1. Show network stats
+ 2. Configure new genesis
+ 3. Track new remote server
+ 4. Deploy network components
+> 2
+
+What would you like to do? (default = create)
+ 1. Create new genesis from scratch
+ 2. Import already existing genesis
+> 1
+
+Which consensus engine to use? (default = clique)
+ 1. Ethash - proof-of-work
+ 2. Clique - proof-of-authority
+> 2
+
+How many seconds should blocks take? (default = 15)
+>
+
+Which accounts are allowed to seal? (mandatory at least one)
+> 0x824e133110726291b30E17D737B83d6D250dc7e3
+> 0xC0Afd564571C327b27b799B3840487aE74f73a16
+> 0x
+
+Which accounts should be pre-funded? (advisable at least one)
+> 0x824e133110726291b30E17D737B83d6D250dc7e3
+> 0xC0Afd564571C327b27b799B3840487aE74f73a16
+> 0x
+
+Should the precompile-addresses (0x1 .. 0xff) be pre-funded with 1 wei? (advisable yes)
+> no
+
+Specify your chain/network ID if you want an explicit one (default = random)
+>
+[32mINFO [0m[04-22|00:46:30.866] Configured new genesis block
+
+What would you like to do? (default = stats)
+ 1. Show network stats
+ 2. Manage existing genesis
+ 3. Track new remote server
+ 4. Deploy network components
+> 2
+
+ 1. Modify existing configurations
+ 2. Export genesis configurations
+ 3. Remove genesis configuration
+> 2
+
+Which folder to save the genesis specs into? (default = current)
+  Will create hw_zbank_testnet.json, hw_zbank_testnet-aleth.json, hw_zbank_testnet-harmony.json, hw_zbank_testnet-parity.json
+>
+[32mINFO [0m[04-22|00:47:24.615] Saved native genesis chain spec          [32mpath[0m=hw_zbank_testnet.json
+[31mERROR[0m[04-22|00:47:24.615] Failed to create Aleth chain spec        [31merr[0m="unsupported consensus engine"
+[31mERROR[0m[04-22|00:47:24.616] Failed to create Parity chain spec       [31merr[0m="unsupported consensus engine"
+[32mINFO [0m[04-22|00:47:24.617] Saved genesis chain spec                 [32mclient[0m=harmony [32mpath[0m=hw_zbank_testnet-harmony.json

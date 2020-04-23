@@ -1,0 +1,5 @@
+#Initialize Node 1:
+geth init hw_zbank_testnet.json --datadir node1_hw_zbank_testnet
+
+#Mining, generates an enode that you need to connect to second node
+Geth --datadir node1_hw_zbank_testnet --mine --minerthreads 1

@@ -1,0 +1,7 @@
+cd:"/c/Program Files/Geth"
+mkdir hw_zbank_testnet
+cd hw_zbank_testnet
+
+#create nodes and directories
+geth account new --datadir node1_hw_zbank_testnet
+geth account new --datadir node2_hw_zbank_testnet 
