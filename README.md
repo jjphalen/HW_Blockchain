@@ -16,7 +16,7 @@
 1. Select #2 Export genesis configurations
 1. Save to current directory Geth/hw_zbank_testnet
 
-![PUPPETH](SCREENSHOTS/PUPPETH_CONFIG.PNG)
+![PUPPETH](Screenshots/puppeth_config.PNG)
 
 ## Initializing Nodes and Mining 
 1. Open a new terminal (git bash on Windows) 
@@ -39,12 +39,12 @@
 1. Currency is "ETH"
 1. Chain is "40343"
 
-## Sending
+## Sending Crypto Currency
 1. From Node1 enter address of Node2 within "View & Send" > "To Address"
 1. Select "Send Transaction"
 1. When prompted select "TX Status"
 
-![TRANSACTION](SCREENSHOTS/TRANSACTION_META_DETA.PNG)
+![TRANSACTION](Screenshots/transaction_meta_data.PNG)
 
 
 
