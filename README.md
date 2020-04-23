@@ -16,7 +16,7 @@
 1. Select #2 Export genesis configurations
 1. Save to current directory Geth/hw_zbank_testnet
 
-![PUPPETH](Screenshots/puppeth_config.PNG)
+![PUPPETH](Screenshots/puppeth_conifig.PNG)
 
 ## Initializing Nodes and Mining 
 1. Open a new terminal (git bash on Windows) 
